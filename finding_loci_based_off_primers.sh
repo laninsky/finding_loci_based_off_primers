@@ -12,7 +12,7 @@ firstseq=`echo $locusline | awk '{print $2}'`
 secondseq=`echo $locusline | awk '{print $3}'`
 echo ${firstseq}"NNNNNNNNNN"${secondseq} > $i.queryseq
 
-blastn -task blastn-short -db $genomefile -query $i.queryseq -outfmt '6 qseqid sseqid sstart send bitscore' > $i.blast
+blastn -task blastn-short -db $genomefile -query $i.queryseq -outfmt '6 qseqid sseqid sstart send bitscore evalue' > $i.blast
 }
 
 # for-loop allowing bylocus to be parallelized
