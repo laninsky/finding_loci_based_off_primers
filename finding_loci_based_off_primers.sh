@@ -7,7 +7,7 @@ makeblastdb -in $genomefile -dbtype nucl
 noloci=`wc -l $primerfile | awk '{print $1}'`;
 
 bylocus () {
-locusline=`tail -n+1 $primerfile | head -n1`;
+locusline=`tail -n+i $primerfile | head -n1`;
 firstseq=`echo $locusline | awk '{print $2}'`
 secondseq=`echo $locusline | awk '{print $3}'`
 echo ${firstseq}"NNNNNNNNNN"${secondseq} > $i.queryseq
