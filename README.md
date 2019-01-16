@@ -6,3 +6,6 @@ Uses BLAST and R scripts to find genomic position of loci based off their primer
 2. A tab-delimited list of your primers with locus name in the 1st column, F primer (5' to 3') in the 2nd column, R primer (5' to 3') in the 3rd column, and expected size including primers (bp) in the 4th. e.g.
 3. BLAST and R installed
 4. An idea of the tolerance around the size of locus you want to detect
+
+
+Credit to IDT (https://sg.idtdna.com/pages/education/decoded/article/tips-for-using-blast-to-locate-pcr-primers) for the idea behind this pipeline
