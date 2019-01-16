@@ -21,3 +21,5 @@ do bylocus "$i" & done
 wait
 
 Rscript summarising_blast.R
+
+rm *queryseq
