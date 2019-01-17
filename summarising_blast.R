@@ -17,7 +17,7 @@ for (i in 1:length(blastresults)) {
               max_evalue=max(X6),
               min_bitscore=min(X5),
               startpos=min(X3,X4),
-              endtpos=max(X3,X4),
+              endpos=max(X3,X4),
               length=(max(X3,X4)-min(X3,X4)+1))
   
   winning_evalue <- min(summarised_matches$max_evalue)
