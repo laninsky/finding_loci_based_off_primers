@@ -50,7 +50,7 @@ bash finding_loci_based_off_primers.sh
 ```
 
 ### What do you get?
-**best_blast_matches.txt**: A tab-delimited output file with the best blast matches for each locus and their genomic location. The "best" scaffolds for each locus are evaluated by their matchrank (between 0 and 4), from adding up the following points:
+_**best_blast_matches.txt**_: A tab-delimited output file with the best blast matches for each locus and their genomic location. The "best" scaffolds for each locus are evaluated by their matchrank (between 0 and 4), from adding up the following points:
 1. nomatches: if a locus matches to the scaffold 2 or more times, the scaffold gets 1 point, otherwise 0 (we expect 2 matches for 'good' locations - corresponding to each of the two primers matching to the scaffold)
 2. max_evalue: this column summarises the max_evalue across the locus matches for a given scaffold. If this is the smallest e-value across scaffolds for that locus then that scaffold wins a point.
 3. min_bitscore: this columns summarised the min_bitscore for the matches for a given scaffold. If this is the largest bit score seen across scaffolds for that locus then that scaffold wins 1 point, otherwise 0.
@@ -65,7 +65,7 @@ locus_name scaffold_name nomatches max_evalue min_bitscore startpos endpos lengt
 ```
 For each locus, the scaffolds with the highest equal matchrank are written out. We'll next pull out the fasta for these matches (with some slush) so you can evaluate whether you think these are good matches or not.
 
-**best_blast_matches.fa**: a fasta file containing the the genomic sequences (with padding on each size equal to expected locus length + slush). Sequences are named: locus_name.scaffold_name.startpos.endpos
+_**best_blast_matches.fa**_: a fasta file containing the the genomic sequences (with padding on each size equal to expected locus length + slush). Sequences are named: locus_name.scaffold_name.startpos.endpos
 
 
 Credit to IDT (https://sg.idtdna.com/pages/education/decoded/article/tips-for-using-blast-to-locate-pcr-primers) for the idea behind this pipeline
