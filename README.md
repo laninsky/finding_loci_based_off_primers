@@ -69,3 +69,19 @@ _**best_blast_matches.fa**_: a fasta file containing the the genomic sequences (
 
 
 Credit to IDT (https://sg.idtdna.com/pages/education/decoded/article/tips-for-using-blast-to-locate-pcr-primers) for the idea behind this pipeline
+
+### Version history
+Version 0.0 first published in Robin TBD
+
+These scripts would not be possible without:  
+blast:   
+Altschul, S.F., Gish, W., Miller, W., Myers, E.W. & Lipman, D.J. (1990) "Basic local alignment search tool." J. Mol. Biol. 215:403-410.  
+Altschul, S.F., Madden, T.L., Schäffer, A.A., Zhang, J., Zhang, Z., Miller, W. and Lipman, D.J., 1997. Gapped BLAST and PSI-BLAST: a new generation of protein database search programs. Nucleic acids research, 25(17), pp.3389-3402.  
+
+Camacho C., Coulouris G., Avagyan V., Ma N., Papadopoulos J., Bealer K., & Madden T.L. (2008) "BLAST+: architecture and applications." BMC Bioinformatics 10:421.   
+
+R: R Core Team. 2015. R: A language and environment for statistical computing. URL http://www.R-project.org/. R Foundation for Statistical Computing, Vienna, Austria. https://www.r-project.org/  
+
+Wickham, H., Francois, R., Henry, L. and Müller, K., dplyr: A grammar of data manipulation.  
+
+Wickham, H., Hester, J. and Francois, R., Readr: Read rectangular text data.  
